@@ -1,0 +1,28 @@
+
+
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+        
+    
+        <div class="navbar-nav">
+            
+          <a routerLink=""class="nav-link active" aria-current="page" href="#" (click)="Onclick()"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp;Buy Now</a>
+        </div>
+      </div>
+      
+    
+  </nav>
+  <div class="sidebar col-md-4" >
+    <a class="active" routerLink="dashboard"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;&nbsp;Dashboard</a>
+    
+    <a routerLink="home"> <i class="fa-solid fa-calendar-days"></i>&nbsp;&nbsp;&nbsp;All Timesheets</a>
+    <a routerLink="product"><i class="fa-regular fa-clock"></i>&nbsp;&nbsp;&nbsp;My Timesheet</a>
+    <a routerLink="myproject"><i class="fa-solid fa-bars"></i>&nbsp;&nbsp;&nbsp;My Projects</a>
+    <a routerLink="profile"><i class="fa-regular fa-user"></i>&nbsp;&nbsp;&nbsp;My Profile</a>
+    <a routerLink="setting"><i class="fa-solid fa-sliders"></i>&nbsp;&nbsp;&nbsp;Settings</a>
+  </div>
+  
+  <div class="content col-md-8">
+    <router-outlet></router-outlet>
+  </div>
+    

@@ -1,0 +1,82 @@
+
+<div class="col-md-8 d-flex" >
+    <span class="card col-md-3 m-auto">
+        <img class="card-img-top" width="30px" height="100px" src="../../assets/grocery.jpg" alt="Card image cap">
+        <span class="card-body">
+            <h4 class="card-title"  #product>Product 1</h4>
+            <h4 class="card-title" #price>100</h4>
+            <button (click)="onRemove()" >-</button>
+            {{counter}}
+            <button (click)="onAdd()">+</button>&nbsp;
+            <button class="mt-2"(click)="onAddBag(product,counter,price)">Add to Bag</button>
+        
+        
+        </span>
+    </span>
+
+        <span class="card col-md-3 m-auto">
+            <img class="card-img-top" width="30px" height="100px" src="../../assets/grocery.jpg" alt="Card image cap">
+            <span class="card-body">
+                <h4 class="card-title"  #product2>Product 2</h4>
+               
+                <h4 class="card-title" #price2>200</h4>
+               
+                <button (click)="onRemove1()">-</button>
+                {{counter1}}
+                <button (click)="onAdd1()">+</button>&nbsp;
+                <button class="mt-2"(click)="onAddBag1(product2,counter1,price2)">Add to Bag</button>
+             </span>
+        </span>
+            
+        <span class="card col-md-3 m-auto">
+            <img class="card-img-top" width="30px" height="100px" src="../../assets/grocery.jpg" alt="Card image cap">
+            <span class="card-body">
+                <h4 class="card-title"  #product3>Product 3</h4>
+              
+                <h4 class="card-title" #price3>300</h4>
+                
+            <button (click)="onRemove2()">-</button>
+            {{counter2}}
+            <button (click)="onAdd2()">+</button>&nbsp;
+            <button class="mt-2"(click)="onAddBag2(product3,counter2,price3)">Add to Bag</button>
+        
+            
+            </span>
+        </span>
+   
+</div>
+
+
+
+
+
+<table class="table " border="1px">
+    <thead>
+        <tr>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Price Details</th>
+            <th>Order Total</th>
+            <th>Action</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        <tr *ngFor="let value of values; let i = index;">
+            <td>{{value.ProductName}} </td> 
+            <td>{{value.Quantity}}</td>
+            <td>{{value.PriceDetails}} </td>
+            <td>{{value.Quantity*value.PriceDetails}}</td>
+            <td><button class="cancel">X</button></td>  
+              
+          </tr>
+    
+
+    </tbody>
+
+
+
+    
+
+</table>
+
